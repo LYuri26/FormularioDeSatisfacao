@@ -1,0 +1,81 @@
+/* Estilos para a tabela */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 2px solid #005caa;
+  padding: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 12px; /* Tamanho atual das letras */
+  word-break: break-word;
+}
+
+th {
+  background-color: #005caa;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #005caa;
+  color: white;
+}
+
+tr:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+/* Estilos para o restante do documento */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  color: #000;
+}
+
+header {
+  background-color: #005caa;
+  color: #fff;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+/* Estilos para tornar a tabela responsiva */
+@media screen and (max-width: 600px) {
+  .tabela {
+    display: none;
+  }
+}
+
+/* Estilos para ajustar o tamanho das colunas */
+td:nth-child(1),
+th:nth-child(1) {
+  width: 18%; /* Coluna "Nome" com 18% da largura da tela */
+}
+
+td:nth-child(13),
+th:nth-child(13) {
+  width: 30%; /* Coluna "Comentário Adicional" com 30% da largura da tela */
+}
+
+/* Demais colunas */
+td:not(:nth-child(1)):not(:nth-child(13)),
+th:not(:nth-child(1)):not(:nth-child(13)) {
+  width: calc((100% - 18% - 30%) / 11); /* Divide o espaço restante entre as outras 11 colunas */
+}
+
+/* Tamanho menor para as letras nas células da tabela */
+@media screen and (max-width: 600px) {
+  th,
+  td {
+    font-size: 10px; /* Tamanho menor das letras para dispositivos móveis */
+  }
+}

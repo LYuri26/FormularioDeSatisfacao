@@ -1,0 +1,61 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 2px solid #005caa;
+  padding: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  word-break: break-word;
+  max-width: 0;
+}
+
+th {
+  background-color: #005caa;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #005caa;
+  color: white;
+}
+
+tr:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+/* Estilos para o restante do documento */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  color: #000;
+}
+
+header {
+  background-color: #005caa;
+  color: #fff;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+/* Estilos para tornar a tabela responsiva */
+@media screen and (max-width: 600px) {
+  table {
+      width: 100%;
+      overflow-x: auto;
+  }
+}
+
+h1 {
+  text-align: center;
+}
