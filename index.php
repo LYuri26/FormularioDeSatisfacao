@@ -179,7 +179,7 @@
         </div>
     </div>
 
-    <h4>8. Se você desejar, por favor, deixe seu nome (opcional):</h4>
+    <h4>8. Se você desejar, por favor, deixe seu nome:</h4>
     <div class="container">
         <div class="row">
             <div class="col">
